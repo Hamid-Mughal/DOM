@@ -1,0 +1,55 @@
+Document Object Model (DOM)
+
+Question:1
+
+How can we access HTML element using DOM in JavaScript
+To access HTML elements using the Document Object Model (DOM) in JavaScript, you can use the following methods:
+ 1. GetElementById: This method is used to select an element based on its id.
+Example: 
+const element = document.getElementById ("example");
+ 2. GetElementsByClassName: This method is used to select elements based on their class.
+Example: 
+const elements = document.getElementsByClassName("example");
+ 3. getElementsByTagName: This method is used to select elements based on their tag name.
+Example: 
+const elements = document.getElementsByTagName("p");
+ 4. querySelector: This method is used to select the first element that matches a specified CSS selector.
+Example: 
+const element = document.querySelector(".example");
+ 5. querySelectorAll: This method is used to select all elements that match a specified CSS selector.
+Example: 
+const elements = document.querySelectorAll(".example");
+Once you have accessed an element, you can manipulate its properties or content using JavaScript.
+
+Question:2
+
+What are event listener in DOM
+An event listener in DOM is a JavaScript function or code structure that waits for a specific event to occur on an HTML element and then executes a piece of code in response.
+In other words, event listeners are functions assigned to HTML elements that listen for specific events such as clicks, keypresses, form submissions, and others. When the event occurs, the function attached as the event listener is executed.
+Examples of events include:
+- Click events: Occur when the user clicks on an element
+- Keydown events: Occur when the user presses a key on their keyboard
+- Load events: Occur when a web page has finished loading
+- Submit events: Occur when a form is submitted by the user
+- Change events: Occur when the value of an input element changes
+To add an event listener to an HTML element, you can use the addEventListener() method in JavaScript, which takes two parameters: the event you want to listen for and the function you want to execute when the event occurs.
+Example:
+document.getElementById("myButton").addEventListener("click", function() {
+    alert("Button clicked!");
+});
+In this example, a click event listener is added to an HTML button element with the ID "myButton". When the button is clicked, the anonymous function is executed and displays an alert message to the user.
+Event listeners are an important part of DOM programming and allow you to create dynamic and responsive web applications.
+
+Question:3
+
+What are the activities that we can perform using DOM
+The Document Object Model (DOM) is an interface that allows programming languages such as JavaScript to interact with HTML, CSS, and XML documents. Here are some of the activities that can be performed using the DOM:
+ 1. Access the HTML elements: DOM allows you to get and manipulate HTML elements such as images, forms, inputs, buttons, and more.
+ 2. Modify HTML elements: With DOM, you can add, delete, and modify the content and attributes of HTML elements dynamically.
+ 3. Change and style CSS: DOM allows you to get, set, and manipulate CSS styles on elements in a web page.
+ 4. Create dynamic HTML: With DOM, you can create new HTML elements, add them to a web page and modify their content and attributes.
+ 5. Validate user input: Using the DOM, you can validate user input on forms before it is submitted to the server.
+ 6. Handle events: DOM provides a mechanism for handling events such as mouse clicks, keyboard presses, and page loading.
+ 7. Traverse the HTML document: The DOM allows you to navigate and traverse the HTML document hierarchy to access any element and its contents.
+8. Manipulate the browser history: With the DOM, you can manipulate the browser history and navigate between different states of a web page.
+The above-mentioned activities are just a few examples of what can be achieved using the DOM. In summary, the DOM provides a powerful way to access, manipulate, and update HTML documents in real-time, thus creating dynamic and interactive web pages.
